@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In-Formed Drivers</title>
+    <style>
+        * {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #FFEEDB;
+        }
+        header {
+            text-align: center;
+            color: #772014;
+        }
+        header img {
+            position: relative;
+            right: 150px;
+            top: 80px;
+        }
+    </style>
+</head>
+<body>
+    <header><img src="img/car-logo.png"><h1>Ideal Car</h1></header>
+
+    <form id = "carForm" action="#" method="get">
+        <label for="manufacturer">Manufacturer: <br>
+        <select id="manufacturer" name="manufacturer" size="5" style="width: 100px">
+            <option value="bmw">BMW</option>
+            <option value="toyota">Toyota</option>
+            <option value="hyundai">Hyundai</option>
+            <option value="ferrari">Ferrari</option>
+            <option value="mazda">Mazda</option>
+        </select>
+    </label><br><br>
+
+    <label for="type">Type: <br>
+        <input 
+        type="radio"
+        id="suv"
+        name="type"
+        value="suv"
+        /><label for="suv">SUV</label> <br>
+        <input 
+        type="radio"
+        id="sedan"
+        name="type"
+        value="sedan"
+        /><label for="sedan">Sedan</label>
+    </label> <br><br>
+
+    <label for="colorOption">Color:
+        <input type="color" name="colorOption" id="colorOption">
+    </label><br><br>
+
+    <fieldset>
+        <legend>Fancy Features</legend>
+            <input type="checkbox"
+            id="option1"
+            name="driveOptions"
+            value="heated seats"
+            ><label for="option1">Heated Seats</label><br>
+
+            <input type="checkbox"
+            id="option2"
+            name="driveOptions"
+            value="Backup Camera"
+            ><label for="option2">Backup Camera</label><br>
+
+            <input type="checkbox"
+            id="option3"
+            name="driveOptions"
+            value="leather seats"
+            ><label for="option3">Leather Seats</label><br>
+
+            <input type="checkbox"
+            id="option4"
+            name="driveOptions"
+            value="sunroof"
+            ><label for="option4">Sunroof</label><br>
+    </fieldset><br>
+
+    <fieldset>
+    <legend>Safety Features</legend>
+            <input type="checkbox"
+            id="option1"
+            name="safety"
+            value="brake assist"
+            ><label for="option1">Brake Assistance</label><br>
+
+            <input type="checkbox"
+            id="option2"
+            name="safety"
+            value="parking assist"
+            ><label for="option2">Parking Assist</label><br>
+
+            <input type="checkbox"
+            id="option3"
+            name="safety"
+            value="4-wheel drive"
+            ><label for="option3">4-Wheel Drive</label><br>
+
+            <input type="checkbox"
+            id="option4"
+            name="driveOptions"
+            value="driver attention"
+            ><label for="option4">Driver Attention Warning</label><br>
+    </fieldset><br>
+
+    <label for="license">License: <br>
+        <input type="text"
+        id="license"
+        name="license"
+        placeholder="XXXXX"
+        size="10"
+        required
+        minlength="1"
+        maxlength="10"
+        >
+    </label> <br><br>
+
+    <label for="comments">Comments: <br>
+        <textarea name="comments" 
+            id="comments" 
+            cols="30" 
+            rows="10">
+        </textarea>
+    </label><br><br>
+
+        <input type="submit" id="button"/>
+    </form>
+</body>
+</html>
